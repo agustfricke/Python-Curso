@@ -1,26 +1,15 @@
-# variableiables 
+# Variables
 
-nombre = 'Agustin'
-edad = 22
+# edad = 32.32
 
-nombre = 'Agustin'
-edad = 22
-print(nombre)
-print(edad)
+# nombre = 'Belen'
+# nOMBRE = 'JUAN'
 
-nombre = 'Juan'
-edad = 'treinta'
+# print(nombre)
+# print(nOMBRE)
+# print(edad)
 
-nombre = 'Agustin'
-edad = 22
-print(type(nombre))
-print(type(edad))
-
-nombre = 'Agustin'
-apellido = 'Fricke'
-
-nombre = 'Pithon'
-Nombre = 'Pithon'
+# Nombres Permitidos:
 
 mivariable = 'Python'
 mi_variable = 'Python'
@@ -29,98 +18,69 @@ mivariable = 'Python'
 Mivariable = 'Python'
 mivariable2 = 'Python'
 
+# Nombre no Permitidos:
+
 # 2mivariable = 'Python'
 # mi-variable = 'Python'
 # mi variable = 'Python'
 
-# miVariable = 'Python'
-# MiVariable = 'Python'
-# mi_variable = 'Python'
+# Deben comenzar por una letra o guión bajo
+# Deben contener sólo caracteres alfanuméricos y guiones bajos(A-z, 0-9 y _)
+# No pueden comenzar con un número(0-9)
+# Presta atención a las mayusculas y minusculas(Edad es una variables diferente a edad)
 
-# a, b, c = 'pera', 'melon', 'naranja'
+
+# Camel case:
+miVariablePrimera = 4
+
+# Pascal case:
+MiVariable = 78
+
+# Sanke case:
+mi_variable = 89
+
+
+# Muchos valores a muchas variables
+# a, b, c = 'pera', 'banana', 'melon'
+
+
+# Un valor a muchas variables
+# a = b = c = 'Python'
 # print(a)
 # print(b)
 # print(c)
 
+# Desempacar coleccion de datos unpacking
 
-# a, b, c = 'Python'
-# print(a)
-# print(b)
-# print(c)
+# frutas = ['pera', 'banana', 'melon']
+# # print(frutas)
+# a, b, c = frutas
+# # print(a)
+# # print(b)
+# # print(c)
+# print(a, b, c)
+
+# Concatenar
+# a = 'Me '
+# b = 'gusta '
+# c = 'Python'
+
+# x = 15
+# y = 3
 
 
-frutas = ['manzana', 'pera', 'melon']
-a, b, c = frutas
-print(a)
-print(b)
-print(c)
+# print(c, y)
 
+# Varibales globales global
 
-a = 'Me'
-b = 'gusta'
-c = 'Python'
-print(a, b, c)
-
-a = 'Me'
-b = 'gusta'
-c = 'Python'
-print(a + b + c)
-
-a = 'Me '
-b = 'gusta '
-c = 'Python'
-print(a + b + c)
-
-a = 5
-b = 5 
-print(a + b)
-10
-
-a = 3
-b = 'Python'
-print(b, a)
-
-# Declaramos la variable
 nombre = 'Python'
 
-# Declaramos la funcion
 def miFuncion():
-    # Usamos la variable dentro de la funcion
-    print('Me gusta ' + nombre)
 
-# Llamamos a la funcion
-miFuncion()
-
-
-# Declaramos la variable global
-nombre = 'Python'
-
-# Declaramos la funcion
-def miFuncion():
-    # Declaramos variable local
-    nombre = 'JavaScript'
-    # Impimios por consola la variable local
-    print('Me gusta ' + nombre)
-
-# Llamamos a la funcion
-miFuncion()
-
-# Imprimimos por consola la varibale global 
-print('Me gusta ' + nombre)
-
-
-
-# Declaramos la funcion
-def miFuncion():
-    # Hacmos la variable global
     global nombre
-    # Declaramos la variable
-    nombre = 'Python'
-    # Usamos la variable dentro de la funcion
+    nombre = 'JavaScript'
     print('Me gusta ' + nombre)
 
-# Llamamos a la funcion
 miFuncion()
 
-# Usamos la variable fuera de la funcion
-print('Me gusta ' + nombre)
+print(nombre)
